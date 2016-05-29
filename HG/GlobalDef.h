@@ -1,5 +1,5 @@
-#ifndef GLOBALH
-#define GLOBALH
+#ifndef GLOBALDEF_H
+#define GLOBALDEF_H
 #pragma once
 
 typedef signed char     sBYTE;
@@ -17,7 +17,8 @@ typedef signed long     sDWORD;
 #endif
 
 #define	TICKDELAY					15 _ms
-#define NO_MSGSPEEDCHECK
+//#define NO_MSGSPEEDCHECK
+//#define NO_MSGSPEEDCHECK_ATTACK
 
 #define SAFEDELETE( PointerVariable ){if(PointerVariable != NULL){delete PointerVariable;PointerVariable = NULL;}}
 #define SAFEDELETEARRAY( PointerVariable ){if(PointerVariable != NULL){delete [] PointerVariable;PointerVariable = NULL;}}
@@ -72,7 +73,7 @@ enum Sex{
 #define RAIDTIME				60
 
 //=============================================================================
-#define GOLDDROPMULTIPLIER			1
+#define GOLDDROPMULTIPLIER			100
 #define EXPMULTIPLIER				150
 //=============================================================================
 //#define WEAPONSPEEDLIMIT
@@ -93,4 +94,4 @@ enum Sex{
 // #define SAMESIDETOWNPROTECT
 // #define ITEMDROP
 
-#endif GLOBALH
+#endif GLOBALDEF_H
